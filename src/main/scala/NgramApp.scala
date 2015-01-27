@@ -33,7 +33,6 @@ object NgramApp {
         
         // initialize Spark
         val conf = new SparkConf().setAppName("NgramApp")
-                                  .set("spark.executor.memory", "5g")
         val sc = new SparkContext(conf)
         
         // split the text into ngrams
